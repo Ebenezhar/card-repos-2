@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.contain{
+  width:700px;
+}
+
+.cord{
+  width:320px;
+}
+
+.card-head{
+  place-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}

@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Card from './card.js'
+import Nav from './nav-bar.js'
+import Content from './content.js';
 
 function App() {
   return (
     <div>
-      <Card></Card>
+      <Nav></Nav>
+      <Content></Content>
     </div>
   );
 }
