@@ -7,7 +7,7 @@ import Content from './content.js';
 
 function App() {
   let nav_inputs ={
-    name:"company Name",
+    name:"Company Name",
     list: [
       {
         name:"Features",
@@ -93,7 +93,7 @@ function App() {
       ]
      
     }
-  
+ 
   return (
     <div>      
       <Nav data = {nav_inputs}></Nav>

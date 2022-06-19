@@ -1,5 +1,68 @@
 import Footer from './bottom.js';
 function Content({data}){
+    let bottom_inputs = {
+        logo: "https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" ,
+        year: "© 2017-2018",
+        cards:[
+          {
+            head:"Features",
+            list: [
+              {
+                name : "Cool stuff",
+              },
+              {
+                name : "Random feature",
+              },
+              {
+                name : "Team feature",
+              },
+              {
+                name : "stuff for developers",
+              },
+              {
+                name : "Another one",
+              },
+              {
+                name : "Last time",
+              },
+            ]
+          },
+          {
+            head:"Resources",
+            list: [
+              {
+                name : "Resource",
+              },
+              {
+                name : "Resource Name",
+              },
+              {
+                name : "Another Resource",
+              },
+              {
+                name : "Final Resource",
+              },
+            ]
+          },
+          {
+            head:"About",
+            list: [
+              {
+                name : "Team",
+              },
+              {
+                name : "Locations",
+              },
+              {
+                name : "Privacy",
+              },
+              {
+                name : "Terms",
+              },
+            ]
+          },
+        ] 
+      }
     console.log("pr",data.boxes);
     return(
         <section>
@@ -31,20 +94,15 @@ function Content({data}){
                                     )
                                 })
                             }                                
-                            </ul>    
-                                
-                            
+                            </ul>  
                             <button type = "button" className = "btn btn-lg btn-block btn-outline-primary">{box.btn}</button>
                         </div>
                     </div>
                     )
                     })
-                }  
-                    
-                   
-                    
+                }       
                 </div>
-                <Footer></Footer>
+                <Footer footdata = {bottom_inputs}></Footer>
             </div>
         </section>
     )
